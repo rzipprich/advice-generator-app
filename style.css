@@ -1,0 +1,81 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+body {
+  background: var(--dark-blue);
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  min-height: 300px;
+  width: 600px;
+  background: var(--dark-grayish-blue);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+body > main {
+  margin: 0 2rem;
+}
+main h1 {
+  color: var(--neon-green);
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 2rem auto;
+  letter-spacing: 0.25rem;
+}
+#quote {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--light-cyan);
+  padding: 0 4rem;
+}
+main > img {
+  margin-bottom: 50px;
+}
+main button {
+  background: var(--neon-green);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateY(50%) translateX(50%);
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  border: 0px;
+}
+main button:hover {
+  box-shadow: 0 0 20px 2px var(--neon-green);
+}
+footer {
+  position: absolute;
+  bottom: 1rem;
+  margin: 0 auto;
+}
+.attribution {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--light-cyan);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  /* color: hsl(228, 45%, 44%); */
+  color: var(--light-cyan);
+}
+
+@media (max-width: 550px) {
+  main > img {
+    content: url(./images/pattern-divider-mobile.svg);
+  }
+}
